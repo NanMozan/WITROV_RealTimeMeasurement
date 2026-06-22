@@ -19,8 +19,8 @@ Install dependencies by running:
     python Real_Time_Measurement.py
 
 ## Things to change before running
-- **Line 7** — camera index: `0` = built-in webcam, `1` = external/ROV camera
-- **Line 52** — `laserDistanceCm` = your actual laser separation in cm (currently 3.65)
+- **Line 15** — camera index: `0` = built-in webcam, `1` = external/ROV camera
+- **Line 109** — `laserDistanceCm` = your actual laser separation in cm (currently 9.1)
 
 ## How it works
 1. Camera captures live video frame
@@ -35,12 +35,12 @@ Install dependencies by running:
 ## Tuning guide
 | Parameter | Location | What to change |
 |---|---|---|
-| Camera index | Line 7 | 0 or 1 |
-| Laser distance | Line 52 | your actual cm measurement |
-| Red HSV range | Lines 16-21 | if dots not detected |
-| White HSV range | Lines 63-64 | if object not detected |
-| Area threshold | Line 76 | increase to reduce noise |
-| Kernel size | Line 12 | increase to remove larger noise |
+| Camera index | Line 15 | 0 or 1 |
+| Laser distance | Line 109 | your actual cm measurement |
+| Red HSV range | Lines 44-50 | if dots not detected |
+| White HSV range | Lines 127-128 | if object not detected |
+| Area threshold | Line 149 | increase to reduce noise |
+| Kernel size | Line 23 | increase to remove larger noise |
 
 ## Built with
 - Python 3
